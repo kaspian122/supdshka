@@ -1,0 +1,456 @@
+
+#content {
+    flex: 1 0 auto;
+    background-color: rgba(0,0,0,0);
+    margin: 0 0 0 0;
+    padding: 0 3.5rem 0 3.5rem;
+    overflow: hidden;
+    height: auto;
+}
+.topcolor{
+    width: 100%;
+    height: 76px;
+    background-color: rgb(18, 22, 35);
+    color: rgb(18, 22, 35);
+}
+.top-slider{
+    background: none;
+    position: relative;
+    margin: 0;
+
+}
+.top-slider img{
+    width: 100%;
+    min-width: 58.5em;
+}
+@media screen and (min-width: 1280px) {
+    .t-s-text {
+        font-size: 1.635vw;
+        min-width: 21em;
+        max-width: 21em;
+        font-weight: 300;
+        padding: 3.25em 0 0 0;
+        position: absolute;
+        margin-left: 3.9em;
+        width: 35%;
+        color: #AABBE2;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+    }
+}
+
+.t-s-text{
+    min-width: 21em;
+    max-width: 21em;
+    font-weight: 300;
+    padding: 3.25em 0 0 0;
+    position: absolute;
+    margin-left: 3.9em;
+    width: 35%;
+    color: #AABBE2;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+.t-s-text h2{
+    color: #FF7628;
+    font-weight: normal;
+    font-size: 2em;
+    margin: 0;
+}
+.t-s-text h2:before{
+    font-family: "Segoe MDL2 Assets";
+    font-style: normal;
+    font-size: 1.25em;
+    content: "❯ ";
+}
+.t-s-text p{
+    margin-top: 1em;
+    margin-bottom: 2.5em;
+}
+.start-now {
+    color: #fff;
+}
+.start-now span{
+    color: #FF7628;
+}
+.t-s-link-button{
+    color: #fff;
+    background-color: #FF7628;
+    width: 11em;
+    text-align: center;
+    border-radius: 15px;
+    transition: .4s;
+
+}
+.t-s-link-button:hover{
+    background-color: #FFAC29;
+}
+.t-s-link-button a{
+    display: inline-block;
+    padding: 0.35em 0.8em 0.6em 0.8em;
+    text-decoration: none;
+    color: #fff;
+
+}
+.t-s-link-button a:before{
+    font-family: "Segoe MDL2 Assets";
+    font-style: normal;
+    font-size: 1.3em;
+    font-stretch: extra-expanded;
+    text-align: center;
+    content: "✉ ";
+}
+.clients {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    margin: 1.5em 10% 1.5em 10%;
+}
+.clients-place{
+    object-fit: cover;
+}
+.clients-place img{
+    width: 100%;
+    max-width: 100%;
+}
+.about-system{
+    margin: 0 0 0 5rem;
+    padding-bottom: 4rem;
+}
+.about-system-conteiner{
+    background: url("52004.png")  right no-repeat;
+    background-size: auto 100%;
+    box-sizing: content-box;
+    padding-bottom: 5em;
+    font-size: 0.86em;
+}
+.a-s-c-content{
+    width: 100%;
+    margin-left: 3em;
+    margin-bottom: 1rem;
+}
+.a-s-c-content div{
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    margin-top: 0.6em;
+}
+.a-s-c-content div div{
+    border: 8px solid #47BCA4;
+    border-radius: 50%;
+    padding: 10px;
+    width: 70px;
+    height: 70px;
+    object-fit: contain;
+    text-align: center;
+    margin-right: 1rem;
+}
+.a-s-c-content div div img{
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+@media screen and (min-width: 1360px) {
+    .a-s-c-content div{
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+        margin-bottom: 1.25vw;
+    }
+    .a-s-c-content div:nth-child(4) {
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+        margin-top: 0.6em;
+        margin-bottom: 2vw;
+    }
+}
+.achivment{
+    display: flex;
+    flex-flow: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+}
+.achivment article{
+    width: 20%;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+.achivment article h2, .years h2{
+    margin-bottom: 0;
+    margin-top: 1.5rem;
+}
+.achivment article p{
+    margin-top: 0;
+}
+.page-title{
+    border-bottom: 2px #EDEDED solid;
+    padding: 0;
+    font-style: normal;
+    font-weight: lighter;
+    color: #FF7628;
+    text-transform: uppercase;
+}
+.page-title h1{
+    padding: 0;
+    font-style: normal;
+    font-weight: 400;
+    margin-top: 2rem;
+    margin-bottom: 0;
+}
+.page-text p{
+    margin: 0;
+}
+.services{
+    margin-bottom: 2em;
+    align-items: center;
+    margin-right: 1.5rem;
+}
+.service {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.service:nth-child(odd){
+    flex-flow: row nowrap;
+}
+.service:nth-child(even) {
+    flex-flow: row-reverse nowrap;
+}
+.service div{
+    width: 20%;
+    background-size: cover !important;
+    padding: 0;
+    margin: 0;
+}
+.service div img {
+    max-width: 100%;
+}
+.service article{
+    width: 65%;
+    box-sizing: border-box;
+    margin-bottom: 3rem;
+    margin-top: 1rem;
+}
+.service article p{
+    font-size: 0.8rem;
+}
+.service article h3{
+    font-size: 1.1rem;
+    font-style: normal;
+    font-weight: lighter;
+}
+.service:nth-child(1) article h3{
+    margin-bottom: 0.5rem;
+}
+.buy-content{
+    background: url("Background-main.jpg") no-repeat;
+    position: relative;
+    background-size:  110% 125%;
+    height: auto;
+    right: 0;
+
+}
+.buy-content img{
+    overflow: hidden;
+    max-width: 1280px;
+    min-width: 1280px;
+    height: 105vh;
+    margin-left: -80vw;
+    margin-top: -4.5vh;
+}
+.buy-form-conteiner{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    text-align: right;
+    margin-right: 3.5rem;
+}
+.buy-form-conteiner h1{
+    margin-right: 10rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: white;
+}
+.buy-form-conteiner h1 span{
+    color: #FF7628;
+}
+.main-fild{
+    border: 0.5px solid #727272;
+    box-sizing: border-box;
+    border-radius: 10px;
+    width: 40vw;
+}
+.text-fild{
+    background: #FFFFFF;
+    border: 0.5px solid #727272;
+    box-sizing: border-box;
+    border-radius: 10px;
+    width: 55vw;
+}
+.visual-tour-conteiner{
+    padding-left: 3rem;
+    min-height: 80%;
+    font-weight: normal;
+}
+.visual-tour-conteiner p{
+    margin-bottom: 3rem;
+}
+
+.v-t-c-file {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 1.5rem;
+    align-items: center;
+}
+.v-t-c-file img{
+    width: 70px;
+    height: 70px;
+    margin-right: 1rem;
+}
+.v-t-c-file div{
+    font-size: 0.925rem;
+    margin: 0;
+}
+.v-t-c-file div p{
+    margin: 0.5rem 0 0 0;
+    font-size: 0.7rem;
+    color: #a9a9a9;
+}
+.v-t-c-text p{
+    margin: 3rem 0 1.5rem 0;
+    color: #47BCA4;
+}
+#f-main-content{
+    display: flex;
+    flex-flow: row nowrap;
+}
+.f-m-c-text-collum{
+    min-width: 500px;
+    max-width: 700px;
+    padding: 1rem;
+    margin: 2rem;
+    box-sizing: border-box;
+    overflow: scroll;
+    min-height: 40vh;
+}
+#QUEST:checked ~ .f-m-c-text-collum p:after{
+    background-color: #2E2F30;
+    content: 'The houses on this short dead-end road stand empty and condemned, their doors yawning open and letting in the weather. Just a few hundred yards away, traffic buzzes on Hillsborough Street, a main thoroughfare in Raleigh, North Carolina, that borders N.C. State University. Here, though, everything is uninhabited and decaying. Someone has spray painted “fuck frats” in bold red across the face of the first house on the left, a little single-story blue place in the shadow of a spotless new building. Skillet Gilmore walks into the dilapidated structure without hesitation.';
+}
+#QUEST2:checked ~ .f-m-c-text-collum p:after {
+    background-color: #47BCA4;
+    content: '“Karl [Agell] from Corrosion [of Conformity] lived here,” he says. Then he goes room by room, naming other friends who lived in them in the 1990s. ';
+}
+.line-s-chem-to{
+    text-align: center;
+    position: relative;
+}
+.main-line{
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    height: 14px;
+    background-color: #FF7629;
+    position: absolute;
+    z-index: 900;
+}
+.main-line-layout2{
+    width: 90%;
+    height: 14px;
+    background-color: #47BCA4;
+    margin-right: 4%;
+    margin-left: 4%;
+    position: absolute;
+    z-index: 901;
+}
+.main-line-layout3{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #FFFFFF;
+    border: 5px solid #47BCA4;
+    z-index: 902;
+    margin-top: -20px;
+}
+.main-line-layout3:nth-child(7){
+    margin-left: 3%;
+}
+.main-line-layout3:nth-child(6){
+    margin-left: 25%;
+}
+.main-line-layout3:nth-child(4){
+    margin-left: 55%;
+}
+.main-line-layout3:nth-child(5){
+    margin-left: 71%;
+}
+.main-line-layout3:nth-child(3){
+    margin-left: 93.5%;
+}
+.main-line-layout3:nth-child(6){
+
+}
+.main-line-layout3:nth-child(4){
+
+}
+.main-line-layout3:nth-child(5){
+
+}
+.main-line-layout3:nth-child(3){
+
+}
+.years{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    margin-bottom: 1rem;
+}
+@media screen and (min-width: 1700px){
+    .years {
+        padding-right: 1%;
+    }
+}
+.years h3{
+    font-size: 1rem;
+    color: #9d9d9d;
+    font-weight: normal;
+    margin-bottom: 0;
+    margin-top: 2rem;
+}
+.years p{
+    margin: 2rem;
+    width: 15%;
+
+}
+.years p:nth-child(1){
+    margin-left: 0;
+    margin-right: 0;
+    width: 17%;
+}
+.years p:nth-child(2){
+    margin-left: 1rem;
+    width: 20%;
+}
+.years p:nth-child(3){
+    margin-left: 6rem;
+    width: 12%;
+}
+.years p:nth-child(4){
+    margin-left: 0;
+    width: 17%;
+}
+.years p:nth-child(5){
+    margin: 2rem 0 3rem 0;
+    width: 16%;
+}
+.page-text{
+    margin-bottom: 2rem;
+}

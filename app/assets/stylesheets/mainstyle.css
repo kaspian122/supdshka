@@ -1,0 +1,126 @@
+html {
+    font-family: 'Segoe UI';
+    font-style: normal;
+    Font-Size: 22px;
+    font-weight:  lighter;
+    min-width: 1280px;
+    height: 100%;
+}
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(18, 22, 35);
+    width: 100%;
+
+}
+.wrapper{
+    background: #fff url(65425_abstract-pixels-2-wallpapers-1080p-by-danielthorndyke-on-deviantart_1920x1080_h.png) right repeat-y;
+    background-size: auto;
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+}
+header{
+    background-color: rgba(18, 22, 35, 0.9);
+    position: fixed;
+    min-width: 1280px;
+    z-index: 9999;
+    width: 100%;
+    backdrop-filter: blur(1px);
+}
+.top-menu{
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5% 0 4%;
+    color: #FFF;
+    height: 76px;
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.header-logo{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    width: 300px;
+    object-fit: cover;
+}
+.header-logo img{
+    width: 49.09px;
+    height: 57px;
+}
+.h-l-text{
+    vertical-align: center !important;
+    margin-left: 0.4em;
+    font-size: 0.6em;
+    line-height: 1;
+
+    color: #AABBE2;
+
+}
+.h-l-text span{
+    font-size: 1.8em;
+    color: #FF7628;
+}
+nav{
+    padding: 0;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+}
+.t-m-elem, .t-m-elem-active{
+    margin: 0 0 0 2em;
+    font-size: 0.9em;
+    text-decoration: none;
+    color: #fff;
+}
+.t-m-elem-active{
+    color: #FF7629;
+}.t-m-elem:hover{
+     color: #FF7629;
+ }
+
+footer{
+    background-color: rgba(18, 22, 35, 1);
+    flex: 0 0 auto;
+}
+.footer-content{
+    margin: 1.6em auto 1em auto;
+    padding-right: 2rem;
+    padding-left: 2rem;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    max-width: 1440px;
+}
+.f-c-collum{
+    width: 30%;
+    color: #747474;
+    font-size: 0.8rem;
+}
+.ssp-logo img{
+    width: 230px;
+}
+
+.f-c-collum:nth-child(2){
+    padding-left: auto;
+    padding-right: auto;
+    text-align: center;
+}
+.logo-sub{
+    margin-top: 0.6em;
+    color: #AEAEAE;
+}
+.supp-footer-logo img{
+    width: 63px;
+    height: 72PX;
+}
+.logo-sub p{
+    margin-top: 0.4em;
+    font-size: 0.6rem;
+}
+.f-c-collum:nth-child(3) p{
+    margin: 0;
+}

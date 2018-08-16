@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <%= stylesheet_link_tag "mainstyle.css", :media => "all" %>
+    <%= stylesheet_link_tag "allstyle.css", :media => "all" %>
+    <title><%= @title %></title>
+  </head>
+  <body>
+    <header>
+      <div class="top-menu">
+        <div class="header-logo">
+          <img src=" <%= image_path('icon.png') %> " alt="supd logo" sizes="10vh">
+          <div class="h-l-text">
+            <span>СУПД</span><br>
+            Система управления<br>
+            проектной деятельностью
+          </div>
+        </div>
+        <nav>
+          <a href="index" class="t-m-elem">О системе</a>
+          <a href="about_company" class="t-m-elem">О компании</a>
+          <a href="virtual_tour" class="t-m-elem">Виртуальный тур</a>
+          <a href="uslugi" class="t-m-elem-active">Услуги</a>
+          <a href="buy" class="t-m-elem">Купить</a>
+          <a href="faq" class="t-m-elem">FAQ</a>
+          <a href="contacts" class="t-m-elem">Контакты</a>
+        </nav>
+      </div>
+    </header>
+    <div class="topcolor"></div>
+    <div class="wrapper">
+        <%= yield %>
+      <footer>
+        <div class="footer-content">
+          <div class="f-c-collum">
+            <div class="ssp-logo">
+              <img src="<%= image_path('ssp-logo.png') %>" alt="SibSoftProject">
+            </div>
+            <div class="contact-information">
+              <p>
+                ООО “СибирьСофтПроект”<br>
+                634055, г. Томск, пр. Развития, д.8
+              </p>
+              <p>
+                Тел.: (3822) 90-10-32<br>
+                Email: sales@sib-soft.ru
+              </p>
+            </div>
+          </div>
+          <div class="f-c-collum">
+            <div class="supp-footer-logo">
+              <img src="<%= image_path("icon-w-b.png") %>" alt="СУПД logo">
+            </div>
+            <div class="logo-sub">
+              СУПД
+              <p>Система управления<br>производственной<br>деятельностью</p>
+            </div>
+          </div>
+          <div class="f-c-collum">
+            <div class="contact-information">
+              <p>
+                Здесь будет размещен текст о дополнительной
+                контактной информации, реклама или иные
+                дополнительные ссылки.
+              </p>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
