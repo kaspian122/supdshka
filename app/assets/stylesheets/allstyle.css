@@ -5,7 +5,7 @@
     margin: 0 0 0 0;
     padding: 0 3.5rem 0 3.5rem;
     overflow: hidden;
-    height: auto;
+    height: 100%;
 }
 .topcolor{
     width: 100%;
@@ -271,6 +271,7 @@
     right: 0;
     text-align: right;
     margin-right: 3.5rem;
+    padding-left: 50%;
 }
 .buy-form-conteiner h1{
     margin-right: 10rem;
@@ -281,13 +282,18 @@
 .buy-form-conteiner h1 span{
     color: #FF7628;
 }
-.main-fild{
+.buy-form {
+    display: flex;
+    flex-direction: column;
+
+}
+.buy-form input{
     border: 0.5px solid #727272;
     box-sizing: border-box;
     border-radius: 10px;
     width: 40vw;
 }
-.text-fild{
+.buy-form textarea{
     background: #FFFFFF;
     border: 0.5px solid #727272;
     box-sizing: border-box;

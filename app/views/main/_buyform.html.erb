@@ -1,0 +1,7 @@
+<%= form_tag({controller: "main", action: "buy"}, method: "POST", class: "buy-form") do %>
+  <%= text_field_tag(:fio, class: "main-fild") %>
+  <%= email_field(:user, :address) %>
+  <%=  telephone_field(:user, :phone) %>
+  <%= text_field_tag(:company) %>
+  <%= text_area_tag(:message, "Hi, nice site", rows: 8, ) %>
+<% end %>
