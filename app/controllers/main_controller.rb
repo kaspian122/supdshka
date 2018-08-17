@@ -5,11 +5,16 @@ class MainController < ApplicationController
   def index
     @title = "supd"
     @pagenumb = 1
+
+  end
+  def create
+    @comment = Comment.new(params[:buy])
   end
 
   def about_company
     @title = "supd"
     @pagenumb = 2
+    @lol = Comment.find(1)
   end
 
   def uslugi

@@ -1,7 +1,14 @@
-<%= form_tag({controller: "main", action: "buy"}, method: "POST", class: "buy-form") do %>
-  <%= text_field_tag(:fio, class: "main-fild") %>
-  <%= email_field(:user, :address) %>
-  <%=  telephone_field(:user, :phone) %>
-  <%= text_field_tag(:company) %>
-  <%= text_area_tag(:message, "Hi, nice site", rows: 8, ) %>
+
+<%= form_with scope: :main, url: buy_path,  method: "POST", class: "buy-form" ,local: true do |form| %>
+    <%= form.text_field :fio, placeholder: "fio" %>
+    <%= form.email_field :adress, placeholder: "fio" %>
+    <%= form.text_field :phone, placeholder: "fio" %>
+    <%= form.text_field :company, placeholder: "fio" %>
+    <%= form.text_area :comment, placeholder: "fio" %>
+    <p>Нажимая кнопку заказать вы даете согласие на обработку персональных данных.</p>
+  <p>
+    <% @str1 = "Купить &#x00A; сейчас".html_safe %>
+    <%= form.submit :freebtn, value: "попробовать&#x00A;бесплатно", class: "t-s-link-button"%>
+    <%= form.submit :sblbtn , value: @str1.html_safe, class: "t-s-link-button"%>
+  </p>
 <% end %>

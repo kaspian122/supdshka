@@ -6,6 +6,9 @@ Rails.application.routes.draw do
   get 'buy', to: 'main#buy', as: 'buy'
   get 'faq', to: 'main#faq', as: 'faq'
   get 'contacts', to: 'main#contacts', as: 'contacts'
+
+  resources :buy , controller: 'main'
+
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
   root 'main#index'
 end
