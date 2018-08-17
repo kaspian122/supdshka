@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  fio: MyString
+  adress: MyString
+  phone: 1
+  company: MyString
+  comment: MyText
+  time: 2018-08-17 15:24:43
+
+two:
+  fio: MyString
+  adress: MyString
+  phone: 1
+  company: MyString
+  comment: MyText
+  time: 2018-08-17 15:24:43
