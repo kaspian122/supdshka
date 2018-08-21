@@ -3,7 +3,7 @@
   <%= form.email_field :adress, placeholder: "Ваш e-mail", :required => true %>
   <%= form.text_field :phone, placeholder: "Ваш номер телефона", :required => true, :type => 'tel', :pattern => '^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$' %>
   <%= form.text_field :company, placeholder: "Название компании", :required => true %>
-  <%= form.text_area :comment, placeholder: "Задайте свой вопрос" %>
+  <%= form.text_area :comment, placeholder: "Задайте свой вопрос", :required => true %>
   <p>Нажимая кнопку заказать вы даете согласие на обработку персональных данных.</p>
   <% if @comment.errors.any? %>
     <div id="error_explanation">
